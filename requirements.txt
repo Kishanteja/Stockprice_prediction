@@ -1,0 +1,23 @@
+# requirements.txt for Stock Price Prediction with GAT and Tweets
+# Compatible with Python 3.12, CUDA 11.8 (GPU) or CPU
+# Install with: pip install -r requirements.txt
+# For PyTorch, use: pip install torch==2.3.1+cu118 -f https://download.pytorch.org/whl/torch_stable.html
+
+# Core dependencies
+torch==2.3.1+cu118  # PyTorch for model (CUDA 11.8); use torch==2.3.1 for CPU
+streamlit==1.31.1  # Web UI
+transformers==4.44.2  # BERT for tweet embeddings
+numpy==1.26.4  # Array operations
+scipy==1.14.1  # Sparse matrices
+scikit-learn==1.5.2  # F1 score, MCC
+plotly==5.24.1  # Interactive plots
+pandas==2.2.3  # DataFrames
+
+# Optional dependencies (uncomment if needed)
+# torchvision==0.18.1+cu118  # For image-related tasks (if extended)
+# torchaudio==2.3.1+cu118  # For audio-related tasks (if extended)
+
+# Notes:
+# - Ensure internet for downloading 'bert-base-uncased' model.
+# - For CUDA 12.1, replace torch with torch==2.3.1+cu121.
+# - Standard library 'pickle' is used but not listed.
